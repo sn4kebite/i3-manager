@@ -1,0 +1,5 @@
+[Unit]
+Description=i3manager
+
+[Service]
+ExecStart=%h/i3-manager/run.sh

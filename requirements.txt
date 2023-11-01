@@ -1,0 +1,4 @@
+i3ipc
+pydbus
+systemd
+xdg
