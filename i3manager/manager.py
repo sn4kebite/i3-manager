@@ -163,7 +163,7 @@ class Manager:
             elif node.type == 'workspace' and node.name == '__i3_scratch':
                 State.current_workspace = self.scratchpad = self.get_workspace(node)
             # elif node.type in ('con', 'floating_con') and node.window and State.current_workspace:
-            elif node.type == 'con' and node.window and State.current_workspace:
+            elif node.type == 'con' and (node.window or node.pid) and State.current_workspace:
                 if node.focused:
                     self.current_output = State.current_output
                     self.current_workspace = State.current_workspace
